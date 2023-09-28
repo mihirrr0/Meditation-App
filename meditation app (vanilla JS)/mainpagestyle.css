@@ -1,0 +1,96 @@
+*{
+    font-family: "Oswald";
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+
+  }
+
+
+  header {
+    background-color: #fb9f00;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+  }
+
+
+
+img {
+
+    display: flexbox;
+    align-items: center;
+    
+
+    height: 400px;
+
+
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+
+  nav {
+    background-color: olive;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+
+    color: white;
+  }
+
+  main {
+    padding: 0px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 28px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .testimonial {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .testimonial p {
+    margin: 0;
+  }
+
+
+
+  footer {
+    background-color: #fb9f00;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  h6{
+    margin-top: 0px;
+  }

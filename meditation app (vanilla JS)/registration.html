@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="./registrationstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Oswald&family=Ysabeau:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+    <h2>Registration</h2>
+    <form action="index.html">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="Password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <input type="checkbox">
+        <p>Subscribe To Out Newsletter<p>
+
+        <a href="./index.html">
+        <input type="submit" value="Submit">
+        </a>
+    </form>
+
+    <table id='userInfoTable'></table>
+
+    
+
+    <script>
+        function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+    var specialChars = /[!@#$%^&*(),.?":{}|<>]/;
+
+
+
+  if (name.trim() == "") {
+        alert("Name cannot be empty");
+        return false;
+      }
+
+    if (email.trim() == "") {
+        alert("Email field cannot be empty");
+        return false;
+      }
+
+    if (password.trim() == "") {
+        alert("Password field cannot be empty");
+        return false;
+      }
+
+      if (/\d/.test(name)) {
+        alert("Name cannot have numbers");
+        return false;
+      }
+
+      if (name.length > 25) {
+        alert("Name cannot be above 25 chracter");
+        return false;
+      }
+
+    if (!password.match(specialChars) || !/[a-zA-Z]/.test(password) || !/\d/.test(password)) {
+      alert("Password must be alphanumeric and contain at least one special character (!@#$%^&*(),.?\":{}|<>)");
+      return false;
+    }
+
+
+
+   if (!/\S+@\S+\.\S+/.test(email)) {
+      alert("Email must be in email format");
+      return false;
+   }
+
+  return true;
+}
+    </script>
+</body>
+
+</html>
